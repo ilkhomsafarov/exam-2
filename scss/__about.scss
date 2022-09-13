@@ -1,0 +1,225 @@
+.about{
+    height: 472px;
+    width: 100%;
+    background-size: cover;
+    background-image: url("../img/grid__template-bg.jpg");
+    margin-bottom: 50px;
+    .container{
+        .about__title{
+            padding-top: 41px;
+            margin-bottom: 55px;
+            h3{
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 40px;
+                line-height:61px;
+                text-align: center;
+                color: #000000;
+            }
+        }
+        .content{
+            display: flex;
+            padding-left: 222px;    
+            .min-card{
+                width:187px;
+                height: 101px;
+                background: #FFFFFF;
+                box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.08);
+                border-radius: 4px;
+                grid-area: min-card;
+                padding-left: 26px;
+                padding-top: 13px;
+                h3{
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 22px;
+                    line-height:37px;
+                    color: #2871A3;                
+                }
+                p{
+                    max-width: 130px;
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height:18px;
+                    color: #363434;
+                    
+                }
+            }
+            .min-cardtwo{
+                width:187px;
+                height: 101px;
+                background: #FFFFFF;
+                box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.08);
+                border-radius: 4px;
+                grid-area: min-cardtwo;
+                padding-left: 26px;
+                padding-top: 13px;
+                h3{
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 22px;
+                    line-height:37px;
+                    color: #2871A3;                
+                }
+                p{
+                    max-width: 130px;
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height:18px;
+                    color: #363434;
+                    
+                }
+            }
+            .max-card{
+                width: 399px;
+                height: 101px;
+                background: #FFFFFF;
+                box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.08);
+                border-radius: 4px;
+                grid-area: max-card;
+                padding-left: 26px;
+                padding-top: 13px;
+                h3{
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 22px;
+                    line-height:37px;
+                    color: #2871A3;
+                    margin-bottom: 7px;  
+                    span{
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height:30px;
+                        color: #000000;
+                    }              
+                }
+                p{
+                    max-width:345px;
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height:18px;
+                    color: #363434;
+                    
+                }
+            }
+            .template{
+                width: 399px;
+                display: grid;
+                grid-gap: 25px 25px;
+                grid-template-areas:"min-card min-cardtwo"
+                                    "max-card max-card";
+                margin-right: 43px;
+            }
+            .right__content{
+                max-width: 475px;
+                p{
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height:33px;
+                    color: #363434;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:768px){
+    .about{
+        height: 635px;
+        padding-left: 30px;
+        padding-right: 30px;
+        .container{
+            .content{
+                padding-left: 0;
+                display: flex;
+                flex-direction: column-reverse;
+                flex-wrap:wrap;
+                .right__content{
+                    max-width: 708px;
+                    width: 100%;
+                    margin-bottom: 35px;
+                    //margin-left: 100px;
+                    width: 100%;
+                    p{
+                        max-width: 708px;
+                        width: 100%;
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 33px;
+                        text-align: center;
+                        color: #363434;
+                        
+                    }
+                }
+                .template{
+                    margin-left: 155px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:360px){
+    .about{
+        padding-left: 15px;
+        padding-right: 15px;
+        .container{
+            .about__title{
+                margin-bottom: 25px;
+                h3{
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 20px;
+                    line-height: 20px;
+                    text-align: center;
+                    color: #000000;
+                    
+                }
+            }
+            .content{
+                .right__content{
+                    p{
+                        font-size: 14px;
+                        line-height: 23px;
+                    }
+                }
+                .template{
+                    max-width: 330px;
+                    margin-left: 0;
+                    grid-gap: 15px 14px;
+                    margin-right: 0;
+                    .min-card,.min-cardtwo{
+                        height: 101px;
+                        width: 157px;
+                        border-radius: 4px;
+                        padding-left: 20px;
+                    }
+                    .max-card{
+                        height: 111px;
+                        width: 331px;
+                        border-radius: 4px;
+                        padding-left: 20px;
+                        p{
+                            max-width: 209px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

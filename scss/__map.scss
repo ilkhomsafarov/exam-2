@@ -1,0 +1,54 @@
+.map{
+    .container{
+        .map__title{
+            h3{
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 61px;
+                text-align: center;
+                color: #000000;
+                margin-bottom: 1px;
+            }
+            p{
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 24px;
+                text-align: center;
+                color: #363434;
+                margin-bottom: 56px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:768px){
+    .map{
+        padding-left:29px;
+        padding-right:29px;
+        .container{
+            .map__title{
+                h3{
+                    font-size: 36px;
+                    line-height:51px;
+                    margin-bottom: 16px;
+                }
+                p{
+                    font-size: 24px;
+                    line-height: 34px;
+                    margin-bottom: 37px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:760px){
+    .map{
+        display: none;
+    }
+    .google_map{
+        display: none;
+    }
+}

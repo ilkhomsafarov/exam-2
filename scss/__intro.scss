@@ -1,0 +1,177 @@
+.intro{
+    width: 100%;
+    height: 721px;
+    display: block;
+    background-image: url("../img/intro__desktop.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 721px;
+    margin-top: -101px;
+    padding-top:132px;
+    margin-bottom: 143px;
+    .container{ 
+        .intro__cards{
+            display: flex;
+            margin-bottom: 60px;
+            .card{
+                display: flex;
+                margin-right: 92px;
+                &:nth-child(2){
+                    margin-right: 85px;
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+                .img__wrapper{
+                    margin-right: 15px;
+
+                }
+                p{
+                    max-width: 186px;
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #515151;
+                    
+                }
+            }
+        }
+        .intro__content{
+            h1{
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 50px;
+                line-height: 84px;
+                color: #246BA1;
+                margin-bottom: 6px;
+            }
+            p{
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height:40px;
+                color: #3C93B1;
+                margin-bottom: 46px;
+            }
+            button{
+                width: 298px;
+                height: 67px;
+                background: linear-gradient(178.2deg, #1FD8EE -46.57%, #1FC3EE 158.2%);
+                border-radius: 4px;
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 40px;
+                text-align: center;
+                color: #FFFFFF;
+                border-radius: 4px;
+                border: none;
+                margin-bottom: 55px;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            .sales{
+                max-width: 217px;
+                align-items: center;
+                display: flex;
+                img{
+                    margin-right: 17px;
+                }
+                p{
+                    max-width: 172px;
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #515151;
+                    margin-bottom: 0;
+                    a{
+                        color: #2871A3;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:768px){
+    .intro{
+        width: 100%;
+        height: 592px;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-image: url("../img/intro__tablet.png");
+        background-size:100% 592px;
+        margin-bottom: 90px;
+        .container{
+            .intro__cards{
+                display: none;
+            }
+            .intro__content{
+                h1{
+                    max-width: 412px;
+                    font-size: 45px;
+                    line-height:55px;
+                }
+                p{
+                    margin-bottom: 51px;
+                }
+                button{
+                    width: 298px;
+                    height: 67px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:360px){
+    .intro{
+        width: 100%;
+        height: 592px;
+        padding-left: 23px;
+        padding-right: 23px;
+        background-image: url("../img/intro__mobile.png");
+        background-position: right;
+        background-size:100% 592px;
+        padding-top:120px;
+        .container{
+            .intro__cards{
+                display: none;
+            }
+            .intro__content{
+                h1{
+                    margin-left: 11px;
+                    max-width:100%;
+                    font-size: 32px;
+                    line-height:40px;
+                    text-align: center;
+                    margin-bottom: 23px;
+                }
+                p{
+                    width: 100%;
+                    text-align: center;
+                    font-size: 20px;
+                    line-height:34px;
+                    margin-bottom: 51px;
+                }
+                button{
+                    width: 298px;
+                    height: 67px;
+                    margin-left: 8px;
+                }
+                .sales{
+                    margin-left:calc(50% - 100.5px);
+                    p{
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}

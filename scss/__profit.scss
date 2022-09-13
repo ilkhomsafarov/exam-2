@@ -1,0 +1,92 @@
+.profit{
+    width: 100%;
+    margin-bottom:144px;
+    
+    .container{
+        width: 100%;
+        padding-left: 155px;
+        .profit__cards{
+            width: auto;
+            display: grid;
+            grid-template-columns:repeat(2, 489px);
+            grid-template-rows: repeat(2, 125px);
+            grid-gap:59px  84px;
+            .card{
+                height: 121px;
+                display: flex;
+                img{
+                    margin-right: 30px;
+                }
+                h3{
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 167.7%;
+                    color: #13BBCF;
+                }
+                p{
+                    max-width: 334px;
+                    width: 100%;
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height:27px;
+                    color: #363434;
+                    
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:768px){
+    .profit{
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-bottom: 90px;
+        .container{
+            padding-left: 110px;
+            .profit__cards{
+                display: grid;
+                grid-template-columns:repeat(1, 489px);
+                grid-template-rows: repeat(4, 125px);
+                grid-gap:59px  0px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:360px){
+    .profit{
+        padding-left: 23px;
+        padding-right: 23px;
+        margin-bottom: 90px;
+        .container{
+            padding-left: 9px;
+            .profit__cards{
+                display: grid;
+                grid-template-columns:repeat(1, 315px);
+                grid-template-rows: repeat(4, 122px);
+                grid-gap:18px  0px;
+                .card{
+                    img{
+                        width:55px;
+                        height:55px;
+                        
+                        margin-right: 14px;
+                        margin-top: 11px;
+                    }
+                    h3{
+                        font-size: 20px;
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 21px;
+                        max-width: 210px;
+                    
+                    }
+                }
+            }
+        }
+    }
+}

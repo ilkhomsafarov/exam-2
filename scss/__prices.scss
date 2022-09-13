@@ -1,0 +1,204 @@
+.price{
+    background-image: url(../img/price-bg.jpg);
+    margin-bottom: 93px;
+    .container{
+        .prices__title{
+            h3{ 
+                text-align: center;
+                width:100%;
+                height: 61px; 
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 61px;
+                text-align: center;
+                color: #000000;
+                margin-bottom: 43px;    
+            }
+        }
+        .prices__cards{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4,285px);
+            grid-template-rows: repeat(2,152px);
+            grid-gap: 20px;
+            margin-bottom: 44px;
+            .card{
+                background: #FFFFFF;
+                border-radius: 4px;
+    
+                .card__content-up{
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-bottom: 12px;
+                    img{
+                        width: 47px;
+                        height: 47px;
+                        margin-top: 30px;
+                        margin-left: 23px;
+                        margin-right: 13px;
+                    }
+                    
+                     h3{
+                        width: 177px;
+                        height: 20px;    
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 20px; 
+                        color: #363434;
+                        border-radius: 4px;
+                        margin-top: 36px;
+    
+                    }
+                    p{
+                        width: 133px;
+                        height: 15px;    
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 15px;
+                        color: #363434;
+                        border-radius: 4px;    
+                    }
+                }
+                .card__content-down{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 231px;
+                    position: relative;
+                    p{
+                        width: 51px;   
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 15px;
+                        color: #A8A8A8;
+                        border-radius: 4px;
+                        margin-left: 24px;
+                    }
+                    strong{
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 20px;
+                        text-align: right;
+                        color: #000000;
+                        border-radius: 4px;
+                    }
+                    .present{ 
+                        position: absolute;
+                        right: 0;
+                    }
+                    .referat{
+                        width: 67px;
+                        height: 30px;
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 15px;
+                        color: #A8A8A8;
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+        .about-price{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-bottom: 68px;
+            p{    
+                width: 100%;
+            text-align: center;
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            color: #363434;
+            margin-bottom: 24px;
+            }
+            button{
+                width: 298px;
+                height: 67px;
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 40px;
+                text-align: center;
+                color: #FFFFFF;
+                border-radius: 4px;
+                background: linear-gradient(178.2deg, #1FD8EE -46.57%, #1FC3EE 158.2%);
+                border-radius: 4px;
+                border: none;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+       
+}
+
+@media only screen and (max-width:768px){
+    .price{
+        padding-left: 30px;
+        padding-right: 30px;
+        .container{
+            padding-left: 59px;
+            padding-right: 59px;
+            .prices__title{
+                h3{
+                height: 55px; 
+                font-size: 36px;
+                line-height: 55px;
+                margin-bottom: 42px;
+                } 
+            }
+            .prices__cards{
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(2,285px);
+                grid-template-rows: repeat(4,152px);
+                grid-gap: 20px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:360px){
+    .price{
+        padding-left: 15px;
+        padding-right: 15px;
+        .container{
+            padding: 0;
+            .prices__title{
+                h3{
+                font-weight: 900;
+                height: 30px; 
+                font-size: 20px;
+                line-height: 30px;
+                margin-bottom: 42px;
+                } 
+            }
+            .prices__cards{
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(1,285px);
+                grid-template-rows: repeat(4,152px);
+                grid-gap: 20px 0px;
+                margin-left: 20px;
+                .card:nth-child(even){
+                    display: none;
+                }
+            }
+        }
+    }
+}
